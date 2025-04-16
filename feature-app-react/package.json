@@ -1,0 +1,64 @@
+{
+  "name": "feature-app-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "-": "^0.0.1",
+    "@feature-hub/core": "^3.7.0",
+    "@feature-hub/react": "^3.8.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "save-dev": "^0.0.1-security",
+    "url-loader": "^4.1.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start:federated": "webpack serve --config webpack.federated.config.js --mode development",
+    "build:federated": "webpack --config webpack.federated.config.js --mode production",
+    "start:umd": "webpack serve --config webpack.umd.config.js --mode development",
+    "build:umd": "webpack --config webpack.umd.config.js --mode production"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/node": "^22.13.10",
+    "@types/webpack": "^5.28.5",
+    "@types/webpack-dev-server": "^4.7.1",
+    "@webpack-cli/serve": "^3.0.1",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.8.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
